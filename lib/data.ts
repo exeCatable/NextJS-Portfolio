@@ -2,6 +2,7 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { LuGraduationCap } from "react-icons/lu";
 import IndieImg from "@/public/indie.png";
+import PokeDex from "@/public/pokedex.png";
 
 export const links = [
   {
@@ -64,6 +65,13 @@ export const projectsData = [
       "Indie Gala is a Website for a fictive Indie-Game Convention. All illustrations were done by me.",
     tags: ["HTML", "CSS", "Bootstrap"],
     imageUrl: IndieImg,
+  },
+  {
+    title: "PokeDex",
+    description:
+      "Pokédex App built with HTML, CSS, JavaScript and an external API.",
+    tags: ["HTML", "CSS", "Bootstrap", "JavaScript", "Pokedex API"],
+    imageUrl: PokeDex,
   },
 ] as const;
 
