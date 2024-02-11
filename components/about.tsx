@@ -2,6 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import SectionHeading from "./section-heading";
 
 export default function About() {
   return (
@@ -10,9 +11,8 @@ export default function About() {
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
-      id="about"
     >
-      <h2 className="mb-8 text-3xl font-extrabold capitalize">About me</h2>
+      <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
         Hey there! I&apos;m Büsra, a web developer and designer from Germany.
         Started off as a web designer, but then I made the leap to become a
