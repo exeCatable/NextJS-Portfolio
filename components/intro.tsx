@@ -95,7 +95,7 @@ export default function Intro() {
         <a
           className="group flex items-center gap-2 rounded-full border border-black/10 bg-white
           p-4 text-gray-900 outline-none transition hover:scale-110 hover:bg-gray-50 hover:text-gray-700 focus:scale-110 active:scale-105"
-          href="https://github.com"
+          href="https://github.com/exeCatable"
           target="_blank"
         >
           <FaGithubSquare />
