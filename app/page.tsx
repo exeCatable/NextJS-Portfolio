@@ -1,4 +1,4 @@
-import SectionDivider from "@/components/SectionDivider";
+import SectionDivider from "@/components/section-divider";
 import About from "@/components/about";
 import Intro from "@/components/intro";
 
