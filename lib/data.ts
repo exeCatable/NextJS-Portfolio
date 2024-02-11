@@ -3,7 +3,6 @@ import { CgWorkAlt } from "react-icons/cg";
 import { LuGraduationCap } from "react-icons/lu";
 import IndieImg from "@/public/indie.png";
 
-
 export const links = [
   {
     name: "Home",
@@ -75,6 +74,6 @@ export const skillsData = [
   "JavaScript",
   "Git",
   "Bootstrap",
-  "Bulma",,
+  "Bulma",
   "Figma",
 ] as const;
