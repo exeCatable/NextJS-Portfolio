@@ -31,7 +31,7 @@ export default function Intro() {
               width="300"
               height="300"
               quality="95"
-              className="h-40 w-40 rounded-full border-[0.75rem] border-indigo-600 object-cover shadow-xl sm:h-60 sm:w-60"
+              className="h-40 w-40 rounded-full border-[0.75rem] border-indigo-700 object-cover shadow-xl sm:h-60 sm:w-60"
               priority={true}
             />
           </motion.div>
@@ -76,8 +76,8 @@ export default function Intro() {
       >
         <Link
           href="#contact"
-          className="group flex items-center gap-2 rounded-full bg-gray-900 px-7 py-3 
-          text-white outline-none transition hover:scale-110 hover:bg-gray-950 focus:scale-110 active:scale-105"
+          className="group flex items-center gap-2 rounded-full bg-indigo-700 px-7 py-3 
+          text-white outline-none transition hover:scale-110 hover:bg-indigo-600 focus:scale-110 active:scale-105"
         >
           Contact me here{" "}
           <BsArrowRight className="opacity-70 transition group-hover:translate-x-1" />
@@ -85,7 +85,7 @@ export default function Intro() {
 
         <a
           className="group flex items-center gap-2 rounded-full border border-black/10 bg-white px-7 
-          py-3 text-gray-900 outline-none transition hover:scale-110 hover:bg-gray-50 hover:text-gray-700 focus:scale-110 active:scale-105"
+          py-3 text-gray-900 outline-none transition hover:scale-110 hover:bg-indigo-50 hover:text-gray-700 focus:scale-110 active:scale-105"
           href="/Lebenslauf_Büsra Sahin.pdf"
           download
         >
@@ -94,7 +94,7 @@ export default function Intro() {
         </a>
         <a
           className="group flex items-center gap-2 rounded-full border border-black/10 bg-white
-          p-4 text-gray-900 outline-none transition hover:scale-110 hover:bg-gray-50 hover:text-gray-700 focus:scale-110 active:scale-105"
+          p-4 text-gray-900 outline-none transition hover:scale-110 hover:bg-indigo-50 hover:text-gray-700 focus:scale-110 active:scale-105"
           href="https://github.com/exeCatable"
           target="_blank"
         >
