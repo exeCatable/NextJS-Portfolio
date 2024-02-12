@@ -85,3 +85,15 @@ export const skillsData = [
   "Bulma",
   "Figma",
 ] as const;
+
+export const aboutMe = [
+  {
+    description: `
+    Hey there! I'm Büsra, a web developer and designer from Germany.
+    Started off as a web designer, but then I made the leap to become a
+    Frontend Developer. of work, you'll catch me sketching—whether
+    it's with a pencil or on a digital canvas. I'm also big on
+    Dungeons and Dragons sessions with my pals, and I like to tinker with my
+    own coding projects in my free time.`,
+  },
+] as const;
