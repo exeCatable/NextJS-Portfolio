@@ -3,21 +3,23 @@
 import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
-import Me from "@/public/me.jpg";
 import Link from "next/link";
 import { BsArrowRight } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
+import { useActiveSectionContext } from "@/context/active-section-context";
+import Me from "@/public/me.jpg";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return (
     <section
       ref={ref}
-      className="mb-28 max-w-[50rem] scroll-mt-[100rem] text-center sm:mb-0"
       id="home"
+      className="mb-28 max-w-[50rem] scroll-mt-[100rem] text-center sm:mb-0"
     >
       <div className="flex items-center justify-center">
         <div className="relative">
@@ -40,7 +42,7 @@ export default function Intro() {
             />
           </motion.div>
           <motion.span
-            className="absolute bottom-0 left-0 text-6xl"
+            className="absolute bottom-0 right-0 text-4xl"
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
@@ -56,7 +58,7 @@ export default function Intro() {
       </div>
 
       <motion.h1
-        className="mb-10 mt-7 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
@@ -88,8 +90,7 @@ export default function Intro() {
         </Link>
 
         <a
-          className="group flex items-center gap-2 rounded-full border border-black/10 bg-white px-7 
-          py-3 text-gray-900 outline-none transition hover:scale-110 hover:bg-indigo-50 hover:text-gray-700 focus:scale-110 active:scale-105"
+          className="borderBlack group flex cursor-pointer items-center gap-2 rounded-full bg-white px-7 py-3 outline-none transition hover:scale-110 focus:scale-110 active:scale-105 dark:bg-white/10"
           href="/Lebenslauf_Büsra Sahin.pdf"
           download
         >
@@ -97,8 +98,7 @@ export default function Intro() {
           <HiDownload className="opacity-60 transition group-hover:translate-y-1" />
         </a>
         <a
-          className="group flex items-center gap-2 rounded-full border border-black/10 bg-white
-          p-4 text-gray-900 outline-none transition hover:scale-110 hover:bg-indigo-50 hover:text-gray-700 focus:scale-110 active:scale-105"
+          className="borderBlack flex cursor-pointer items-center gap-2 rounded-full bg-white p-4 text-gray-700 transition hover:scale-[1.15] focus:scale-[1.15] active:scale-105 dark:bg-white/10 dark:text-white/60"
           href="https://github.com/exeCatable"
           target="_blank"
         >
