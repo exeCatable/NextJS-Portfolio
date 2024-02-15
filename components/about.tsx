@@ -23,7 +23,9 @@ export default function About() {
       id="about"
       ref={ref}
     >
-      <SectionHeading>About me</SectionHeading>
+      <SectionHeading>
+        About <span className="text-indigo-700 dark:text-indigo-500">me</span>
+      </SectionHeading>
       {description}
     </motion.section>
   );

@@ -16,8 +16,12 @@ export default function Experience() {
   const { theme } = useTheme();
 
   return (
+    // TODO: fix scrol active header behaviour
     <section id="experience" ref={ref} className="mb-28 scroll-mt-28 sm:mb-40">
-      <SectionHeading>My Experience</SectionHeading>
+      <SectionHeading>
+        My{" "}
+        <span className="text-indigo-700 dark:text-indigo-500">Experience</span>
+      </SectionHeading>
       <VerticalTimeline lineColor="">
         {experiencesData.map((item, index) => (
           <React.Fragment key={index}>
@@ -34,20 +38,20 @@ export default function Experience() {
               contentArrowStyle={{
                 borderRight:
                   theme === "light"
-                    ? "0.4rem solid #9ca3af"
+                    ? "0.4rem solid #4338ca"
                     : "0.4rem solid rgba(255, 255, 255, 0.5)",
               }}
               date={item.date}
               icon={item.icon}
               iconStyle={{
-                background:
-                  theme === "light" ? "white" : "rgba(255, 255, 255, 0.15)",
+                background: "#4338ca",
                 fontSize: "1.5rem",
+                color: "#fff",
               }}
             >
               <h3 className="font-semibold capitalize">{item.title}</h3>
               <p className="!mt-0 font-normal">{item.description}</p>
-              <p className="!mt-1 !font-normal text-gray-700">
+              <p className="!mt-1 !font-normal text-gray-700 dark:text-gray-500">
                 {item.description}
               </p>
             </VerticalTimelineElement>
