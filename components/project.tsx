@@ -4,6 +4,7 @@ import { useRef } from "react";
 import { projectsData } from "@/lib/data";
 import Image from "next/image";
 import { FaGithub } from "react-icons/fa";
+import { FaBehance } from "react-icons/fa";
 import { FaDesktop } from "react-icons/fa";
 import { motion, useScroll, useTransform } from "framer-motion";
 
@@ -16,6 +17,7 @@ export default function Project({
   imageUrl,
   github,
   link,
+  behance,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -34,17 +36,17 @@ export default function Project({
       }}
       className="group mb-3 last:mb-0 sm:mb-8"
     >
-      <section className="relative max-w-[42rem] overflow-hidden rounded-lg border border-black/5 bg-gray-100 transition hover:bg-indigo-100 dark:bg-white/10 dark:text-white dark:hover:bg-white/20 sm:h-[20rem] sm:pr-8 sm:group-even:pl-8">
-        <div className="flex h-full flex-col px-5 pb-7 pt-4 sm:max-w-[50%] sm:pl-10 sm:pr-2 sm:pt-10 sm:group-even:ml-[18rem]">
+      <section className="relative max-w-[47rem] overflow-hidden rounded-lg border border-black/5 bg-gray-100 transition hover:bg-indigo-100 dark:bg-white/10 dark:text-white dark:hover:bg-white/20 sm:h-[20rem] sm:pr-8 sm:group-even:pl-8">
+        <div className="flex h-full max-w-[100%] flex-col px-5 pb-7 pt-4 sm:max-w-[60%] sm:pl-10 sm:pr-2 sm:pt-10 sm:group-even:ml-[18rem]">
           <h3 className="text-2xl font-semibold">{title}</h3>
           <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
             {description}
           </p>
-          <div className=" mt-2 flex flex-wrap gap-3">
+          <div className="my-4 mt-2 flex flex-wrap gap-3">
             {github && (
               <div className="mt-4 flex flex-wrap gap-2 sm:mt-auto">
                 <a
-                  className="borderBlack flex cursor-pointer items-center gap-2 rounded-full bg-white p-4 text-gray-700 transition hover:scale-[1.15] focus:scale-[1.15] active:scale-105 dark:bg-white/10 dark:text-white/60"
+                  className="borderBlack flex cursor-pointer items-center gap-2 rounded-full bg-white p-2 text-gray-700 transition hover:scale-[1.15] focus:scale-[1.15] active:scale-105 dark:bg-white/10 dark:text-white/90"
                   href={github}
                   target="_blank"
                 >
@@ -52,14 +54,25 @@ export default function Project({
                 </a>
               </div>
             )}
-            {github && (
+            {link && (
               <div className="mt-4 flex flex-wrap gap-2 sm:mt-auto">
                 <a
-                  className="borderBlack flex cursor-pointer items-center gap-2 rounded-full bg-white p-4 text-gray-700 transition hover:scale-[1.15] focus:scale-[1.15] active:scale-105 dark:bg-white/10 dark:text-white/60"
-                  href={github}
+                  className="borderBlack flex cursor-pointer items-center gap-2 rounded-full bg-white p-2 text-gray-700 transition hover:scale-[1.15] focus:scale-[1.15] active:scale-105 dark:bg-white/10 dark:text-white/90"
+                  href={link}
                   target="_blank"
                 >
                   <FaDesktop />
+                </a>
+              </div>
+            )}
+            {behance && (
+              <div className="mt-4 flex flex-wrap gap-2 sm:mt-auto">
+                <a
+                  className="borderBlack flex cursor-pointer items-center gap-2 rounded-full bg-white p-2 text-gray-700 transition hover:scale-[1.15] focus:scale-[1.15] active:scale-105 dark:bg-white/10 dark:text-white/90"
+                  href={behance}
+                  target="_blank"
+                >
+                  <FaBehance />
                 </a>
               </div>
             )}

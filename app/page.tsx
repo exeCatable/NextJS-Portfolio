@@ -1,4 +1,5 @@
 import About from "@/components/about";
+import ArtGallery from "@/components/art-gallery";
 import Contact from "@/components/contact";
 import Experience from "@/components/experience";
 import Intro from "@/components/intro";
@@ -14,6 +15,7 @@ export default function Home() {
       <About />
       <Projects />
       <Skills />
+      <ArtGallery />
       <Experience />
       <Contact />
     </main>
