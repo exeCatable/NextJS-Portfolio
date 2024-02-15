@@ -35,6 +35,7 @@ export const experiencesData = [
   {
     title: "CareerFoundry GmbH",
     position: "Full-Stack Web Development",
+    location: null,
     description:
       "I graduated after 6 months of studying. I immediately found a job as a front-end developer at 24heGmbH.",
     icon: React.createElement(LuGraduationCap),
@@ -43,6 +44,7 @@ export const experiencesData = [
   {
     title: "42he GmbH",
     position: "Front-End Developer",
+    location: null,
     description:
       "Currently working front-end developer mainly working with Vue and Nuxt.",
     icon: React.createElement(CgWorkAlt),
@@ -51,6 +53,7 @@ export const experiencesData = [
   {
     title: "ganzgraph gmbh",
     position: "Webdesign",
+    location: null,
     description:
       "During my apprenticeship i worked as a Web Designer for 2 Years",
     icon: React.createElement(CgWorkAlt),
@@ -83,7 +86,6 @@ export const projectsData = [
       "Pokédex App built with HTML, CSS, JavaScript and an external API.",
     tags: ["HTML", "CSS", "Bootstrap", "JavaScript", "Pokedex API"],
     imageUrl: PokeDex,
-    // TODO: implement conditional rendering
     github: null,
     link: "https://github.com/exeCatable/IndieGala",
   },
@@ -98,6 +100,9 @@ export const skillsData = [
   "Bootstrap",
   "Bulma",
   "Figma",
+  "React",
+  "Vue",
+  "Adobe Creative Cloud",
 ] as const;
 
 export const aboutMe = [

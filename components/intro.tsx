@@ -89,7 +89,7 @@ export default function Intro() {
             className="group flex items-center gap-2 rounded-full bg-indigo-700 px-7 py-3
             text-white outline-none transition hover:scale-105 hover:bg-indigo-600 focus:scale-110 active:scale-105"
           >
-            Contact me here{" "}
+            Contact me{" "}
             <BsArrowRight className="opacity-70 transition group-hover:translate-x-1" />
           </Link>
           <a
