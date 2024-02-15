@@ -22,10 +22,11 @@ export default function ArtGallery() {
       }}
     >
       <SectionHeading>
-        <span className="text-indigo-700 dark:text-indigo-500">My </span>Art
+        My Digital
+        <span className="text-indigo-700 dark:text-indigo-500"> Art</span>
       </SectionHeading>
       <motion.div
-        className="mt-4 flex flex-col  flex-wrap items-center justify-center gap-4 px-4 text-lg font-medium dark:text-white/80 sm:mt-auto sm:flex-row"
+        className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
@@ -34,7 +35,7 @@ export default function ArtGallery() {
       >
         {artData.map((images, index) => (
           <Image
-            className="w-[25rem] rounded-md"
+            className="h-auto max-w-full rounded-lg transition hover:scale-[1.05]"
             src={images}
             alt="My art"
             quality={95}
