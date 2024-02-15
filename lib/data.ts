@@ -1,14 +1,37 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { LuGraduationCap } from "react-icons/lu";
+
+// Projects
 import IndieImg from "@/public/indie.png";
 import Angular from "@/public/angular.png";
 import Meet from "@/public/meet.png";
 import PokeDex from "@/public/pokedex.png";
 import thumbPhone from "@/public/thumbPhone.png";
 import Next from "@/public/next.png";
-import aniflix from "@/public/AnimeFlix.png";
 import oldportfolio from "@/public/oldportfolio.png";
+import aniflix from "@/public/AnimeFlix.png";
+
+// Art gallery
+import infernal from "@/public/0df7f922_original.jpg";
+import agnes from "@/public/agnes.png";
+import druid from "@/public/Capture.png";
+import derps from "@/public/derps of the storm.jpg";
+import diaboro from "@/public/diaborro2.jpg";
+import dnd from "@/public/DnD5e.png";
+import elly from "@/public/elly.png";
+import star from "@/public/b88a375a_original.jpg";
+import lunkwok from "@/public/image.png";
+import mik from "@/public/mik bloody.jpg";
+import rosi from "@/public/rosi.png";
+import tess from "@/public/Tess.png";
+import tiefling from "@/public/Tiefling.png";
+import abra from "@/public/Untitled_Artwork 2.png";
+import chary from "@/public/charizard.png";
+import fluff from "@/public/fluff.png";
+import knight from "@/public/knight.png";
+import pip from "@/public/piplip.png";
+import rogue from "@/public/rogue.png";
 
 export const links = [
   {
@@ -43,6 +66,15 @@ export const links = [
 
 export const experiencesData = [
   {
+    title: "42he GmbH",
+    position: "Front-End Developer",
+    location: null,
+    description:
+      "Currently working as a front-end developer, mainly working with Vue and Nuxt.",
+    icon: React.createElement(CgWorkAlt),
+    date: "10/2021 - heute",
+  },
+  {
     title: "CareerFoundry GmbH",
     position: "Full-Stack Web Development",
     location: null,
@@ -52,22 +84,22 @@ export const experiencesData = [
     date: "02/2021 - 08/2021",
   },
   {
-    title: "42he GmbH",
-    position: "Front-End Developer",
-    location: null,
-    description:
-      "Currently working front-end developer mainly working with Vue and Nuxt.",
-    icon: React.createElement(CgWorkAlt),
-    date: "10/2021 - heute",
-  },
-  {
     title: "ganzgraph gmbh",
     position: "Webdesign",
     location: null,
     description:
       "During my apprenticeship i worked as a Web Designer for 2 Years",
     icon: React.createElement(CgWorkAlt),
-    date: " 10/2021 - heute ",
+    date: "08/2018 - 06/2020",
+  },
+  {
+    title: "STRÖER Media",
+    position: "Graphic Design",
+    location: null,
+    description:
+      "During my Time at Uni I worked here, creating print Products such as brochures and created ilustrations,",
+    icon: React.createElement(CgWorkAlt),
+    date: "10/2017 - 08/2018",
   },
 ] as const;
 
@@ -183,12 +215,25 @@ export const skillsData = [
 ] as const;
 
 export const artData = [
-  oldportfolio,
-  Next,
-  oldportfolio,
-  Next,
-  oldportfolio,
-  Next,
+  infernal,
+  agnes,
+  star,
+  derps,
+  dnd,
+  elly,
+  diaboro,
+  druid,
+  lunkwok,
+  mik,
+  rosi,
+  tess,
+  tiefling,
+  abra,
+  chary,
+  pip,
+  fluff,
+  knight,
+  rogue,
 ] as const;
 
 export const aboutMe = [

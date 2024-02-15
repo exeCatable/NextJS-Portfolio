@@ -35,7 +35,7 @@ export default function ArtGallery() {
       >
         {artData.map((images, index) => (
           <Image
-            className="h-auto max-w-full rounded-lg transition hover:scale-[1.05]"
+            className="h-auto max-w-full rounded-lg transition hover:scale-[1.02]"
             src={images}
             alt="My art"
             quality={95}
