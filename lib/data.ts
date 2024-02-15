@@ -105,13 +105,12 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "IndieGala Website",
-    description:
-      "Indie Gala is a Website for a fictive Indie-Game Convention. All illustrations were done by me.",
-    tags: ["HTML", "CSS", "Bootstrap"],
-    imageUrl: IndieImg,
-    github: "https://github.com/exeCatable/IndieGala",
-    link: "https://execatable.github.io/IndieGala/",
+    title: "This Portfolio",
+    description: "New Portfolio Build with Next.js and hosted by Vercel.",
+    tags: ["Next.js", "TailwindCSS", "Framer Motion"],
+    imageUrl: Next,
+    github: "https://github.com/exeCatable/nextjs-portfolio",
+    link: null,
     behance: null,
   },
   {
@@ -122,6 +121,16 @@ export const projectsData = [
     imageUrl: oldportfolio,
     github: "https://github.com/exeCatable/Portfolio",
     link: "https://execatable.github.io/Portfolio/",
+    behance: null,
+  },
+  {
+    title: "IndieGala Website",
+    description:
+      "Indie Gala is a Website for a fictive Indie-Game Convention. All illustrations were done by me.",
+    tags: ["HTML", "CSS", "Bootstrap"],
+    imageUrl: IndieImg,
+    github: "https://github.com/exeCatable/IndieGala",
+    link: "https://execatable.github.io/IndieGala/",
     behance: null,
   },
   {
@@ -140,8 +149,8 @@ export const projectsData = [
       "This project is about creating a REST API for animeFlix-Client that interacts with a database that stores data about different movies.",
     tags: ["Node.js", "Express", "mongoDB", "Heroku", "App Hosting"],
     imageUrl: aniflix,
-    github: null,
-    link: "https://github.com/exeCatable/animeFlix",
+    link: null,
+    github: "https://github.com/exeCatable/animeFlix-Backend",
     behance: null,
   },
   {
@@ -187,15 +196,6 @@ export const projectsData = [
     imageUrl: Meet,
     github: "https://github.com/exeCatable/meet",
     link: "https://execatable.github.io/meet/",
-    behance: null,
-  },
-  {
-    title: "Next.js Portfolio",
-    description: "New Portfolio Build with Next.js and hosted by Vercel.",
-    tags: ["Next.js", "TailwindCSS", "Framer Motion"],
-    imageUrl: Next,
-    github: "https://github.com/exeCatable/nextjs-portfolio",
-    link: null,
     behance: null,
   },
 ] as const;
