@@ -7,7 +7,7 @@ import { aboutMe } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 
 export default function About() {
-  const { ref } = useSectionInView("About");
+  const { ref } = useSectionInView("About", 0.7);
 
   const description = aboutMe.map((about) => (
     <p className="mb-3" key={about.description}>
