@@ -32,6 +32,7 @@ import fluff from "@/public/fluff.png";
 import knight from "@/public/knight.png";
 import pip from "@/public/piplip.png";
 import rogue from "@/public/rogue.png";
+import lara from "@/public/lara.png";
 
 export const links = [
   {
@@ -234,6 +235,7 @@ export const artData = [
   fluff,
   knight,
   rogue,
+  lara,
 ] as const;
 
 export const aboutMe = [
