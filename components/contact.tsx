@@ -7,7 +7,7 @@ import { useSectionInView } from "@/lib/hooks";
 import SectionHeading from "./section-heading";
 
 export default function Contact() {
-  const { ref } = useSectionInView("Contact", 0.5);
+  const { ref } = useSectionInView("Contact");
 
   return (
     <section ref={ref} className="mb-28 scroll-mt-28 sm:mb-40" id="contact">

@@ -12,7 +12,7 @@ import { useActiveSectionContext } from "@/context/active-section-context";
 import Me from "@/public/me.jpg";
 
 export default function Intro() {
-  const { ref } = useSectionInView("Home", 0.5);
+  const { ref } = useSectionInView("Home", 0.7);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return (

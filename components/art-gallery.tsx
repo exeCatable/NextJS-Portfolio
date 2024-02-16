@@ -8,7 +8,7 @@ import SectionHeading from "./section-heading";
 import Image from "next/image";
 
 export default function ArtGallery() {
-  const { ref } = useSectionInView("Art", 0.8);
+  const { ref } = useSectionInView("Art");
 
   return (
     <motion.section
