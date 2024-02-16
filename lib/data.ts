@@ -19,7 +19,7 @@ import druid from "@/public/Capture.png";
 import derps from "@/public/derps of the storm.jpg";
 import diaboro from "@/public/diaborro2.jpg";
 import dnd from "@/public/DnD5e.png";
-import elly from "@/public/elly.png";
+import elly from "@/public/Elly.png";
 import star from "@/public/b88a375a_original.jpg";
 import lunkwok from "@/public/image.png";
 import mik from "@/public/mik bloody.jpg";
