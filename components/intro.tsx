@@ -86,20 +86,16 @@ export default function Intro() {
         >
           <Link
             href="#contact"
+            onClick={() => {
+              setActiveSection("Contact");
+              setTimeOfLastClick(Date.now());
+            }}
             className="group flex items-center gap-2 rounded-full bg-indigo-700 px-7 py-3
             text-white outline-none transition hover:scale-105 hover:bg-indigo-600 focus:scale-110 active:scale-105"
           >
             Contact me{" "}
             <BsArrowRight className="opacity-70 transition group-hover:translate-x-1" />
           </Link>
-          <a
-            className="borderBlack group flex cursor-pointer items-center gap-2 rounded-full bg-white px-7 py-3 outline-none transition hover:scale-105 focus:scale-110 active:scale-105 dark:bg-white/10"
-            href="/Lebenslauf_Büsra Sahin.pdf"
-            download
-          >
-            Download CV{" "}
-            <HiDownload className="opacity-60 transition group-hover:translate-y-1" />
-          </a>
           <a
             className="borderBlack flex cursor-pointer items-center gap-2 rounded-full bg-white p-4 text-gray-700 transition hover:scale-[1.15] focus:scale-[1.15] active:scale-105 dark:bg-white/10 dark:text-white/60"
             href="https://github.com/exeCatable"
