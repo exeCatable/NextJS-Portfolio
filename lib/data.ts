@@ -116,8 +116,8 @@ export const projectsData = [
   {
     title: "My first Portfolio",
     description:
-      "Within this project you will find everything that I used to build my first portfolio.",
-    tags: ["HTML", "CSS", "Bootstrap", "Heroku", "App Hosting"],
+      "My Vanilla Portfolio built using HTML and CSS, Hosted with Github Pages",
+    tags: ["HTML", "CSS"],
     imageUrl: oldportfolio,
     github: "https://github.com/exeCatable/Portfolio",
     link: "https://execatable.github.io/Portfolio/",
